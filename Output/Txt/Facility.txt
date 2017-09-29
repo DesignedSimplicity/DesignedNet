@@ -1,0 +1,14 @@
+Table: Facility
+
+#. COLUMN		PK	FK	NULLABLE	DB TYPE
+1. FacilityID		1	0	0	SqlDbType.Int 
+2. FacilityName		0	0	1	SqlDbType.NVarChar, 50 
+3. Address		0	0	1	SqlDbType.NVarChar, 50 
+4. City		0	0	1	SqlDbType.NVarChar, 50 
+5. State		0	0	1	SqlDbType.NVarChar, 9 
+6. Zip		0	0	1	SqlDbType.Int 
+7. Phone		0	0	1	SqlDbType.NVarChar, 50 
+8. Fax		0	0	1	SqlDbType.NVarChar, 50 
+9. EmailAdd		0	0	1	SqlDbType.NVarChar, 50 
+10. TotlSqFoot		0	0	1	SqlDbType.Int 
+11. UserName		0	0	1	SqlDbType.NVarChar, 255 

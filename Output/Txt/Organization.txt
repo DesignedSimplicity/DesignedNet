@@ -1,0 +1,11 @@
+Table: Organization
+
+#. COLUMN		PK	FK	NULLABLE	DB TYPE
+1. SetupID		1	0	0	SqlDbType.Int 
+2. Organization		0	0	1	SqlDbType.NVarChar, 50 
+3. Address		0	0	1	SqlDbType.NVarChar, 50 
+4. City		0	0	1	SqlDbType.NVarChar, 50 
+5. State		0	0	1	SqlDbType.NVarChar, 50 
+6. Zip		0	0	1	SqlDbType.NVarChar, 50 
+7. Phone		0	0	1	SqlDbType.NVarChar, 50 
+8. Fax		0	0	1	SqlDbType.NVarChar, 50 

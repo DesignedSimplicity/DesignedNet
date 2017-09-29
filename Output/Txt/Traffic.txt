@@ -1,0 +1,20 @@
+Table: Traffic
+
+#. COLUMN		PK	FK	NULLABLE	DB TYPE
+1. TrafficID		1	0	0	SqlDbType.Int 
+2. FacilityID		0	1	1	SqlDbType.Int 
+3. Date		0	0	1	SqlDbType.Unknown SqlDbType: 7 
+4. NewCallFromWeb		0	0	1	SqlDbType.Int 
+5. NewCallFromYellow		0	0	1	SqlDbType.Int 
+6. NewCallFromOther		0	0	1	SqlDbType.Int 
+7. TotalCalls		0	0	1	SqlDbType.Int 
+8. WalkinWeb		0	0	1	SqlDbType.Int 
+9. WalkinYellow		0	0	1	SqlDbType.Int 
+10. WalkinOther		0	0	1	SqlDbType.Int 
+11. WalkinTotal		0	0	1	SqlDbType.Int 
+12. Rented		0	0	1	SqlDbType.Int 
+13. Movin		0	0	1	SqlDbType.Int 
+14. MoveOut		0	0	1	SqlDbType.Int 
+15. Transfer		0	0	1	SqlDbType.Int 
+16. Vacated		0	0	1	SqlDbType.Int 
+17. Comments		0	0	1	SqlDbType.NVarChar, 100 

@@ -1,0 +1,24 @@
+Table: Finance
+
+#. COLUMN		PK	FK	NULLABLE	DB TYPE
+1. FinanceID		1	0	0	SqlDbType.Int 
+2. FacilityID		0	1	1	SqlDbType.Int 
+3. TrafficID		0	0	1	SqlDbType.Int 
+4. Date		0	0	1	SqlDbType.Unknown SqlDbType: 7 
+5. Lookup-Fac		0	0	1	SqlDbType.Int 
+6. Cash		0	0	1	SqlDbType.Money 
+7. Checks		0	0	1	SqlDbType.Money 
+8. CCards		0	0	1	SqlDbType.Money 
+9. MiscCredit		0	0	1	SqlDbType.Money 
+10. NonStdRent		0	0	1	SqlDbType.Money 
+11. MerchantSales		0	0	1	SqlDbType.Money 
+12. DCRTotal		0	0	1	SqlDbType.Money 
+13. ChargeRent		0	0	1	SqlDbType.Money 
+14. ChargeLate		0	0	1	SqlDbType.Money 
+15. ChargeLien		0	0	1	SqlDbType.Money 
+16. ChargeAdmin		0	0	1	SqlDbType.Money 
+17. ChargeBDebt		0	0	1	SqlDbType.Money 
+18. ChargeMisc		0	0	1	SqlDbType.Money 
+19. UseTax		0	0	1	SqlDbType.Money 
+20. Eccon		0	0	1	SqlDbType.Int 
+21. Percent		0	0	1	SqlDbType.Int 

@@ -1,0 +1,2 @@
+<%@ Control Language="c#" AutoEventWireup="false" Codebehind="OrganizationView.ascx.cs" Inherits="Storage.Framework.Web.Controls.OrganizationView" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
+<table class="form" border="0" cellpadding="1" cellspacing="0"><tr><td class="header"><asp:Label ID="lblTitle" Runat="server">Organization View</asp:Label></td></tr><tr><td><p class="text"><asp:Label ID="lblView" Runat="server" EnableViewState="false"></asp:Label></p></td></tr></table>

@@ -1,2 +1,0 @@
-<%@ Control Language="c#" AutoEventWireup="false" Codebehind="EmployeeView.ascx.cs" Inherits="Storage.Framework.Web.Controls.EmployeeView" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
-<table class="form" border="0" cellpadding="1" cellspacing="0"><tr><td class="header"><asp:Label ID="lblTitle" Runat="server">Employee View</asp:Label></td></tr><tr><td><p class="text"><asp:Label ID="lblView" Runat="server" EnableViewState="false"></asp:Label></p></td></tr></table>

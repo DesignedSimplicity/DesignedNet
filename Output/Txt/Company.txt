@@ -1,0 +1,19 @@
+Table: Company
+
+#. COLUMN		PK	FK	NULLABLE	DB TYPE
+1. CompanyID		1	0	0	SqlDbType.Int 
+2. CompanyTypeID		0	1	0	SqlDbType.Int 
+3. CompanyStatusID		0	1	0	SqlDbType.Int 
+4. CompanyName		0	0	0	SqlDbType.VarChar, 100 
+5. LocationName		0	0	1	SqlDbType.VarChar, 100 
+6. StreetAddress		0	0	1	SqlDbType.VarChar, 100 
+7. Region		0	0	1	SqlDbType.VarChar, 50 
+8. City		0	0	1	SqlDbType.VarChar, 50 
+9. State		0	0	1	SqlDbType.VarChar, 10 
+10. Zip		0	0	1	SqlDbType.VarChar, 10 
+11. Phone		0	0	1	SqlDbType.VarChar, 50 
+12. Fax		0	0	1	SqlDbType.VarChar, 50 
+13. Website		0	0	1	SqlDbType.VarChar, 50 
+14. Description		0	0	1	SqlDbType.VarChar, 5000 
+15. Created		0	0	0	SqlDbType.DateTime 
+16. Updated		0	0	1	SqlDbType.DateTime 

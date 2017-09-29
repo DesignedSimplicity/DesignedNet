@@ -1,8 +1,0 @@
-Table: TruckRentals
-
-#. COLUMN		PK	FK	NULLABLE	DB TYPE
-1. TruckRentalID		1	0	0	SqlDbType.Int 
-2. FacilityID		0	1	1	SqlDbType.Int 
-3. EnteredDate		0	0	1	SqlDbType.Unknown SqlDbType: 7 
-4. AppliedDate		0	0	1	SqlDbType.Unknown SqlDbType: 7 
-5. Amount		0	0	1	SqlDbType.Money 

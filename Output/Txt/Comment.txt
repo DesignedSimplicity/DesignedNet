@@ -1,0 +1,18 @@
+Table: Comment
+
+#. COLUMN		PK	FK	NULLABLE	DB TYPE
+1. CommentID		1	0	0	SqlDbType.Int 
+2. CommentTypeID		0	1	0	SqlDbType.Int 
+3. ProjectID		0	1	1	SqlDbType.Int 
+4. CompanyID		0	1	1	SqlDbType.Int 
+5. ContactID		0	1	1	SqlDbType.Int 
+6. CreatedByID		0	0	1	SqlDbType.Int 
+7. AssignedToID		0	0	1	SqlDbType.Int 
+8. Priority		0	0	1	SqlDbType.Int 
+9. Thread		0	0	1	SqlDbType.VarChar, 50 
+10. Subject		0	0	0	SqlDbType.VarChar, 500 
+11. Comment		0	0	0	SqlDbType.VarChar, 5000 
+12. Created		0	0	0	SqlDbType.DateTime 
+13. Updated		0	0	1	SqlDbType.DateTime 
+14. Reminder		0	0	1	SqlDbType.DateTime 
+15. Completed		0	0	1	SqlDbType.DateTime 

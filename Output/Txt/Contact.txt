@@ -1,0 +1,24 @@
+Table: Contact
+
+#. COLUMN		PK	FK	NULLABLE	DB TYPE
+1. ContactID		1	0	0	SqlDbType.Int 
+2. ContactTypeID		0	1	0	SqlDbType.Int 
+3. ContactStatusID		0	1	0	SqlDbType.Int 
+4. CompanyID		0	1	0	SqlDbType.Int 
+5. SessionID		0	0	1	SqlDbType.UniqueIdentifier 
+6. Prefix		0	0	1	SqlDbType.VarChar, 10 
+7. FirstName		0	0	1	SqlDbType.VarChar, 50 
+8. LastName		0	0	0	SqlDbType.VarChar, 50 
+9. JobTitle		0	0	1	SqlDbType.VarChar, 50 
+10. OfficeNumber		0	0	1	SqlDbType.VarChar, 50 
+11. MobileNumber		0	0	1	SqlDbType.VarChar, 50 
+12. HomeNumber		0	0	1	SqlDbType.VarChar, 50 
+13. OtherNumber		0	0	1	SqlDbType.VarChar, 50 
+14. FaxNumber		0	0	1	SqlDbType.VarChar, 50 
+15. EmailAddress		0	0	1	SqlDbType.VarChar, 100 
+16. Description		0	0	1	SqlDbType.VarChar, 500 
+17. Username		0	0	1	SqlDbType.VarChar, 50 
+18. Password		0	0	1	SqlDbType.VarChar, 50 
+19. Created		0	0	0	SqlDbType.DateTime 
+20. Updated		0	0	1	SqlDbType.DateTime 
+21. LastLogin		0	0	1	SqlDbType.DateTime 

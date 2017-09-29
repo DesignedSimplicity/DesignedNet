@@ -1,0 +1,225 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{119D61D3-F4AC-4090-9079-6C59205C4C82}"
+        SccProjectName = "SAK"
+        SccLocalPath = "SAK"
+        SccAuxPath = "SAK"
+        SccProvider = "SAK"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "DesignedNet.Generator.Win"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "DesignedNet.Generator.Win"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = "DesignedNet.Generator.Win.Generator"
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Web.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "!ToDo.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Generator.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Generator.resx"
+                    DependentUpon = "Generator.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Templates\CommonTransformations.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Biz\Biz@Entity@.cs.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Dal\Dal@Entity@.cs.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Sql\@Entity@_Delete.sql.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Sql\@Entity@_Exists.sql.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Sql\@Entity@_Insert.sql.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Sql\@Entity@_List.sql.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Sql\@Entity@_ListByFk.sql.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Sql\@Entity@_ListXml.sql.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Sql\@Entity@_Report.sql.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Sql\@Entity@_Select.sql.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Sql\@Entity@_SelectXml.sql.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Sql\@Entity@_Update.sql.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Sql\HeaderFooter.sql.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Txt\@Entity@.txt.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Web\Manage@Entity@.aspx.cs.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Web\Manage@Entity@.aspx.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Web\Controls\@Entity@Edit.ascx.cs.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Web\Controls\@Entity@Edit.ascx.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Web\Controls\@Entity@List.ascx.cs.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Web\Controls\@Entity@List.ascx.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Web\Controls\@Entity@View.ascx.cs.xslt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates\Web\Controls\@Entity@View.ascx.xslt"
+                    BuildAction = "Content"
+                />
+                <Folder RelPath = "Templates\Win\" />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

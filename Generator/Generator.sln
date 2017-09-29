@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator", "Generator.csproj", "{119D61D3-F4AC-4090-9079-6C59205C4C82}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {29BF7D8B-7647-43D6-BC6C-31E0B7DC0BDE}
+		SccProjectUniqueName1 = Generator.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{119D61D3-F4AC-4090-9079-6C59205C4C82}.Debug.ActiveCfg = Debug|.NET
+		{119D61D3-F4AC-4090-9079-6C59205C4C82}.Debug.Build.0 = Debug|.NET
+		{119D61D3-F4AC-4090-9079-6C59205C4C82}.Release.ActiveCfg = Release|.NET
+		{119D61D3-F4AC-4090-9079-6C59205C4C82}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

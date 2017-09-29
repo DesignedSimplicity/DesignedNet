@@ -1,0 +1,6 @@
+1. Add Load Project functionality
+2. Implement layer generation options
+3. Add error checking for database connection
+4. Include file type registration / icons / startup
+5. Fix list url item selection (error in template)
+6. Add PageHeader, PageFooter and PageNavigation as Web templates

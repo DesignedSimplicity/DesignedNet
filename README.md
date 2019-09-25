@@ -20,28 +20,98 @@ The ability to generate this amount of code substantially reduces the number of 
 
 ## User Interface
 
-```html
-<%@ Control Language="c#" AutoEventWireup="false" CodeBehind="CommentList.ascx.cs" Inherits="Example.Web.Controls.CommentList" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
+ASPX pages and ASXC controls were created for each database entity to enable simple CRUD access with foreign key navigation and user input validation.
 
-<asp:DataList ID="list" runat="server" CssClass="list" HeaderStyle-CssClass="header" ItemStyle-CssClass="listitem" AlternatingItemStyle-CssClass="listitem2" Width="100%">
-	<HeaderTemplate>Comment List</HeaderTemplate>
-	<ItemTemplate>
-		<a class="keyword" href="<%# _navigateUrl+DataBinder.Eval(Container.DataItem, "CommentID")%>">
-			<b>#<%#DataBinder.Eval(Container.DataItem, "CommentID")%>:</b></a>
-			<b>CommentTypeID:</b> <%#DataBinder.Eval(Container.DataItem, "CommentTypeID")%>
-			<b>ProjectID:</b> <%#DataBinder.Eval(Container.DataItem, "ProjectID")%>
-			<b>CompanyID:</b> <%#DataBinder.Eval(Container.DataItem, "CompanyID")%>
-			<b>ContactID:</b> <%#DataBinder.Eval(Container.DataItem, "ContactID")%>
-			<b>CreatedByID:</b> <%#DataBinder.Eval(Container.DataItem, "CreatedByID")%>
-			<b>AssignedToID:</b> <%#DataBinder.Eval(Container.DataItem, "AssignedToID")%>
-			<b>Priority:</b> <%#DataBinder.Eval(Container.DataItem, "Priority")%>
-			<b>Thread:</b> <%#DataBinder.Eval(Container.DataItem, "Thread")%>
-			<b>Subject:</b> <%#DataBinder.Eval(Container.DataItem, "Subject")%>
-			<b>Comment:</b> <%#DataBinder.Eval(Container.DataItem, "Comment")%>
-			<b>Created:</b> <%#DataBinder.Eval(Container.DataItem, "Created")%>
-			<b>Updated:</b> <%#DataBinder.Eval(Container.DataItem, "Updated")%>
-			<b>Reminder:</b> <%#DataBinder.Eval(Container.DataItem, "Reminder")%>
-			<b>Completed:</b> <%#DataBinder.Eval(Container.DataItem, "Completed")%>
-		</ItemTemplate>
-</asp:DataList>
+[Manage Comments Page](../master/Output/Web/ManageComment.ascx.cs)
+
+[Edit Comment Control](../master/Output/Web/Controls/CommentEdit.ascx.cs)
+
+```html
+<table class="form" border="0" cellpadding="1" cellspacing="0">
+   <tr>
+      <td colspan="2" class="header">
+         <asp:Label ID="lblTitle" Runat="server">Comment Form</asp:Label>
+      </td>
+   </tr>
+   <tr>
+      <td class="field">CommentTypeID:</td>
+      <td>
+         <asp:DropDownList ID="selCommentTypeID" Runat="server" CssClass="select">
+            <asp:ListItem Value="">SELECT ONE...</asp:ListItem>
+         </asp:DropDownList>
+      </td>
+   </tr>
+   <tr>
+      <td class="field">ProjectID:</td>
+      <td>
+         <asp:DropDownList ID="selProjectID" Runat="server" CssClass="select">
+            <asp:ListItem Value="">SELECT ONE...</asp:ListItem>
+         </asp:DropDownList>
+      </td>
+   </tr>
+   <tr>
+      <td class="field">CompanyID:</td>
+      <td>
+         <asp:DropDownList ID="selCompanyID" Runat="server" CssClass="select">
+            <asp:ListItem Value="">SELECT ONE...</asp:ListItem>
+         </asp:DropDownList>
+      </td>
+   </tr>
+   <tr>
+      <td class="field">ContactID:</td>
+      <td>
+         <asp:DropDownList ID="selContactID" Runat="server" CssClass="select">
+            <asp:ListItem Value="">SELECT ONE...</asp:ListItem>
+         </asp:DropDownList>
+      </td>
+   </tr>
+   <tr>
+      <td class="field">CreatedByID:</td>
+      <td>
+         <asp:TextBox ID="txtCreatedByID" Runat="server" CssClass="input" MaxLength="25"></asp:TextBox>
+      </td>
+   </tr>
+   <tr>
+      <td class="field">AssignedToID:</td>
+      <td>
+         <asp:TextBox ID="txtAssignedToID" Runat="server" CssClass="input" MaxLength="25"></asp:TextBox>
+      </td>
+   </tr>
+   <tr>
+      <td class="field">Priority:</td>
+      <td>
+         <asp:TextBox ID="txtPriority" Runat="server" CssClass="input" MaxLength="25"></asp:TextBox>
+      </td>
+   </tr>
+   <tr>
+      <td class="field">Thread:</td>
+      <td>
+         <asp:TextBox ID="txtThread" Runat="server" CssClass="input" MaxLength="50"></asp:TextBox>
+      </td>
+   </tr>
+   <tr>
+      <td class="field">Subject:</td>
+      <td>
+         <asp:TextBox ID="txtSubject" Runat="server" CssClass="input" MaxLength="500"></asp:TextBox>
+      </td>
+   </tr>
+   <tr>
+      <td class="field">Comment:</td>
+      <td>
+         <asp:TextBox ID="txtComment" Runat="server" CssClass="input" MaxLength="5000"></asp:TextBox>
+      </td>
+   </tr>
+   <tr>
+      <td class="field">Reminder:</td>
+      <td>
+         <asp:TextBox ID="txtReminder" Runat="server" CssClass="input" MaxLength="25"></asp:TextBox>
+      </td>
+   </tr>
+   <tr>
+      <td class="field">Completed:</td>
+      <td>
+         <asp:TextBox ID="txtCompleted" Runat="server" CssClass="input" MaxLength="25"></asp:TextBox>
+      </td>
+   </tr>
+</table>
 ```

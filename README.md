@@ -21,17 +21,17 @@ A Comments entity for a CRM system with Projects, Companines and Contacts
 
 [Data Access Layer](./Output/Dal/DalComment.cs)
 
-[SQL Proc Scripts](./Output/Sql/Comment_Verbs.sql)
+[SQL CRUD Procedures](./Output/Sql/Comment_Verbs.sql)
 
 ## User Interface
 
 ASPX pages and ASXC controls were created for each database entity to enable simple CRUD access with foreign key navigation and user input validation.
 
-[Manage Comments Page Source](./Output/Web/ManageComment.aspx.cs)
-
-[Edit Comment Control Logic](./Output/Web/Controls/CommentEdit.ascx.cs)
+### [Manage Comments Page Source](./Output/Web/ManageComment.aspx.cs)
 
 ![Manage Comments Page](./Documentation/Comments.PNG)
+
+### [Edit Comment Control Logic](./Output/Web/Controls/CommentEdit.ascx.cs)
 
 **Edit Form HTML Example**
 ```html

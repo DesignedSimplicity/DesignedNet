@@ -1,7 +1,7 @@
 # DesignedNet.Framework
 ## Microsoft .NET v2.0 Code Generation Framework
 
-### The DesignedNet Framework reduces development effort with automated code generation of database entites
+### The DesignedNet Framework reduces development effort with automated code generation
 
 DesignedNet is an application framework and code generation engine built using the Microsoft .NET Framework. This framework has been optimized to provide high performance and scalability for enterprise level software applications based on ASP.NET and Windows technologies. This framework has been leveraged on numerous projects for clients in a variety of industries with great success to deliver quality solutions in limited time and and on budget.
 
@@ -10,22 +10,28 @@ The ability to generate this amount of code substantially reduces the number of 
 ## Documentation
 
 [Detailed Requirments](../master/Documentation/Requirements.pdf)
+
 [Layer Specifications](../master/Documentation/Specifications.pdf)
 
-## Code Example
+## Code Examples
+
+A Comments entity for a CRM system with Projects, Companines and Contacts
 
 [Business Entity](../master/Output/Biz/BizComment.cs)
-[Database Access](../master/Output/Dal/DalComment.cs)
-[SQL Scripts](../master/Output/Sql/SqlComment.cs)
+
+[Data Access Layer](../master/Output/Dal/DalComment.cs)
+
+[SQL Proc Scripts](../master/Output/Sql/Comment_Verbs.sql)
 
 ## User Interface
 
 ASPX pages and ASXC controls were created for each database entity to enable simple CRUD access with foreign key navigation and user input validation.
 
-[Manage Comments Page](../master/Output/Web/ManageComment.ascx.cs)
+[Manage Comments Page Source](../master/Output/Web/ManageComment.ascx.cs)
 
-[Edit Comment Control](../master/Output/Web/Controls/CommentEdit.ascx.cs)
+[Edit Comment Control Logic](../master/Output/Web/Controls/CommentEdit.ascx.cs)
 
+**Edit Form HTML Example**
 ```html
 <table class="form" border="0" cellpadding="1" cellspacing="0">
    <tr>

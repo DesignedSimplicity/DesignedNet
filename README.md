@@ -29,7 +29,7 @@ ASPX pages and ASXC controls were created for each database entity to enable sim
 
 ### [Manage Comments Page Source](./Output/Web/ManageComment.aspx.cs)
 
-![Manage Comments Page](./Documentation/Comments.png)
+![Manage Comments Page](./Documentation/Comments.PNG)
 
 ### [Edit Comment Control Logic](./Output/Web/Controls/CommentEdit.ascx.cs)
 

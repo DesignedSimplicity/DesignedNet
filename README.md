@@ -21,11 +21,27 @@ The ability to generate this amount of code substantially reduces the number of 
 ## User Interface
 
 ```html
-<%@ Control Language="c#" AutoEventWireup="false" Codebehind="CommentList.ascx.cs" Inherits="Harkins.Web.Controls.CommentList" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
-  
-<asp:DataList ID="list" Runat="server" CssClass="list" HeaderStyle-CssClass="header" ItemStyle-CssClass="listitem" AlternatingItemStyle-CssClass="listitem2" Width="100%">
-   <HeaderTemplate>Comment List</HeaderTemplate>
-   <ItemTemplate><a class="keyword" href="<%#_navigateUrl+DataBinder.Eval(Container.DataItem, &quot;CommentID&quot;)%>"><b>#<%#DataBinder.Eval(Container.DataItem, "CommentID")%>:</b></a> <b>CommentTypeID:</b> <%#DataBinder.Eval(Container.DataItem, "CommentTypeID")%> <b>ProjectID:</b> <%#DataBinder.Eval(Container.DataItem, "ProjectID")%> <b>CompanyID:</b> <%#DataBinder.Eval(Container.DataItem, "CompanyID")%> <b>ContactID:</b> <%#DataBinder.Eval(Container.DataItem, "ContactID")%> <b>CreatedByID:</b> <%#DataBinder.Eval(Container.DataItem, "CreatedByID")%> <b>AssignedToID:</b> <%#DataBinder.Eval(Container.DataItem, "AssignedToID")%> <b>Priority:</b> <%#DataBinder.Eval(Container.DataItem, "Priority")%> <b>Thread:</b> <%#DataBinder.Eval(Container.DataItem, "Thread")%> <b>Subject:</b> <%#DataBinder.Eval(Container.DataItem, "Subject")%> <b>Comment:</b> <%#DataBinder.Eval(Container.DataItem, "Comment")%> <b>Created:</b> <%#DataBinder.Eval(Container.DataItem, "Created")%> <b>Updated:</b> <%#DataBinder.Eval(Container.DataItem, "Updated")%> <b>Reminder:</b> <%#DataBinder.Eval(Container.DataItem, "Reminder")%> <b>Completed:</b> <%#DataBinder.Eval(Container.DataItem, "Completed")%> </ItemTemplate>
-</asp:DataList>
+<%@ Control Language="c#" AutoEventWireup="false" CodeBehind="CommentList.ascx.cs" Inherits="Example.Web.Controls.CommentList" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
 
+<asp:DataList ID="list" runat="server" CssClass="list" HeaderStyle-CssClass="header" ItemStyle-CssClass="listitem" AlternatingItemStyle-CssClass="listitem2" Width="100%">
+	<HeaderTemplate>Comment List</HeaderTemplate>
+	<ItemTemplate>
+		<a class="keyword" href="<%# _navigateUrl+DataBinder.Eval(Container.DataItem, "CommentID")%>">
+			<b>#<%#DataBinder.Eval(Container.DataItem, "CommentID")%>:</b></a>
+			<b>CommentTypeID:</b> <%#DataBinder.Eval(Container.DataItem, "CommentTypeID")%>
+			<b>ProjectID:</b> <%#DataBinder.Eval(Container.DataItem, "ProjectID")%>
+			<b>CompanyID:</b> <%#DataBinder.Eval(Container.DataItem, "CompanyID")%>
+			<b>ContactID:</b> <%#DataBinder.Eval(Container.DataItem, "ContactID")%>
+			<b>CreatedByID:</b> <%#DataBinder.Eval(Container.DataItem, "CreatedByID")%>
+			<b>AssignedToID:</b> <%#DataBinder.Eval(Container.DataItem, "AssignedToID")%>
+			<b>Priority:</b> <%#DataBinder.Eval(Container.DataItem, "Priority")%>
+			<b>Thread:</b> <%#DataBinder.Eval(Container.DataItem, "Thread")%>
+			<b>Subject:</b> <%#DataBinder.Eval(Container.DataItem, "Subject")%>
+			<b>Comment:</b> <%#DataBinder.Eval(Container.DataItem, "Comment")%>
+			<b>Created:</b> <%#DataBinder.Eval(Container.DataItem, "Created")%>
+			<b>Updated:</b> <%#DataBinder.Eval(Container.DataItem, "Updated")%>
+			<b>Reminder:</b> <%#DataBinder.Eval(Container.DataItem, "Reminder")%>
+			<b>Completed:</b> <%#DataBinder.Eval(Container.DataItem, "Completed")%>
+		</ItemTemplate>
+</asp:DataList>
 ```

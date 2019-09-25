@@ -7,6 +7,8 @@ DesignedNet is an application framework and code generation engine built using t
 
 The ability to generate this amount of code substantially reduces the number of bugs due to the reuse of tested and proven base classes and the automation of the tedious operations of matching table and column names with display controls and user input validation. Examples of implementations of this framework are documented below for your review.
 
+![DesignedNet Framework](./Documentation/Framework.png)
+
 ## Documentation
 
 [Detailed Requirments](./Documentation/Requirements.pdf)
@@ -29,7 +31,7 @@ ASPX pages and ASXC controls were created for each database entity to enable sim
 
 ### [Manage Comments Page Source](./Output/Web/ManageComment.aspx.cs)
 
-![Manage Comments Page](./Documentation/Comments.PNG)
+![Manage Comments Page](./Documentation/Comments.png)
 
 ### [Edit Comment Control Logic](./Output/Web/Controls/CommentEdit.ascx.cs)
 

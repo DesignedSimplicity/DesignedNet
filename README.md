@@ -9,27 +9,29 @@ The ability to generate this amount of code substantially reduces the number of 
 
 ## Documentation
 
-[Detailed Requirments](../master/Documentation/Requirements.pdf)
+[Detailed Requirments](./Documentation/Requirements.pdf)
 
-[Layer Specifications](../master/Documentation/Specifications.pdf)
+[Layer Specifications](./Documentation/Specifications.pdf)
 
 ## Code Examples
 
 A Comments entity for a CRM system with Projects, Companines and Contacts
 
-[Business Entity](../master/Output/Biz/BizComment.cs)
+[Business Entity](./Output/Biz/BizComment.cs)
 
-[Data Access Layer](../master/Output/Dal/DalComment.cs)
+[Data Access Layer](./Output/Dal/DalComment.cs)
 
-[SQL Proc Scripts](../master/Output/Sql/Comment_Verbs.sql)
+[SQL Proc Scripts](./Output/Sql/Comment_Verbs.sql)
 
 ## User Interface
 
 ASPX pages and ASXC controls were created for each database entity to enable simple CRUD access with foreign key navigation and user input validation.
 
-[Manage Comments Page Source](../master/Output/Web/ManageComment.ascx.cs)
+[Manage Comments Page Source](./Output/Web/ManageComment.aspx.cs)
 
-[Edit Comment Control Logic](../master/Output/Web/Controls/CommentEdit.ascx.cs)
+[Edit Comment Control Logic](./Output/Web/Controls/CommentEdit.ascx.cs)
+
+![Manage Comments Page](./Documentation/Comments.PNG)
 
 **Edit Form HTML Example**
 ```html
